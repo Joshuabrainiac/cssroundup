@@ -1,0 +1,472 @@
+@font-face {
+    font-family: inter;
+    src: url('../font/inter.ttf');
+}
+
+*{
+    box-sizing: border-box;
+}
+
+body{
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+    margin: 0;
+    overflow-x: hidden;
+}
+
+header{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    padding: 5px 7px;
+    background-color: #feecbd;
+    height: 50px;
+    width: 100%;
+}
+
+header .logo img{
+    width: 75px;
+}
+
+header nav ul{
+    display: flex;
+    list-style-type: none;
+    align-items: center;
+    gap: 70px;
+    color: #34c759;
+}
+
+a{
+    text-decoration: none;
+    color: black;
+    padding: 10px;
+}
+
+button{
+    background: transparent;
+    border: 0px;
+}
+
+.hero-section .cta button:first-child a, header .cta button:first-child a{
+    border: 2px solid #ffc107;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-section .cta button:last-child a, header .cta button:last-child a{
+    border: 2px solid #34c759;
+    padding: 10px;
+    border-radius: 5px;
+}
+
+.hero-section .cta button a{
+    text-decoration: none;
+    color: white;
+    background: transparent;
+}
+
+main .hero-section{
+    width: 100%;
+    height: 81vh;
+    border: 1px solid rgb(0, 0, 0);
+    border-color: transparent;
+    background-image:linear-gradient(rgba(0, 0, 0, 0.5), rgba(0, 0, 0, 0.5)), url('../images/bg.jpg');
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 0 0 40px;
+}
+
+main .hero-section h1{
+    font-family: inter;
+    font-size: 100px;
+    color: #feecbd;
+    margin-bottom: 0px;
+}
+
+main .hero-section p{
+    width: 600px;
+    color: white;
+    font-size: 16px;
+    text-align: center;
+    padding: 10px;
+    margin: 7px 190px 20px;
+}
+
+.hero-section .cta button:last-child a:hover, header .cta button:last-child a:hover{
+    background-color: #34c759;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #34c759;
+    transition: 300ms ease-in-out;
+}
+
+.hero-section .cta button:first-child a:hover, header .cta button:first-child a:hover{
+    background-color: #ffc107;
+    padding: 10px;
+    border-radius: 5px;
+    border: 2px solid #ffc107;
+    transition: 300ms ease-in-out;
+}
+
+nav ul li a:hover{
+    background-color: #34c759;
+    padding: 10px;
+    border-radius: 5px;
+    color: white;
+    transition: all 300ms ease-in-out;
+}
+
+main .values-section{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: 40px auto;
+}
+
+main .values-section div{
+    width: 410px;
+    height: 160px;
+    background-color: #feecbd;
+    padding: 10px;
+    border-radius: 10px;
+}
+
+main .values-section div p{
+    color: rgb(75, 75, 75);
+}
+
+main .about-section{
+    width: 95%;
+    display: flex;
+    justify-content: space-between;
+    margin: 40px auto 100px;
+}
+
+main .about-section div{
+    width: 47%;
+    height: 600px;
+    overflow: hidden;
+}
+
+main .about-section .about-text h2{
+    font-size: 50px;
+    margin-bottom: 100px;
+}
+
+main .about-section .about-text h2 span{
+    color: #34c759;
+}
+
+main .about-section .about-text p{
+    margin-top: 30px;
+}
+
+main .about-section .about-image{
+    border-radius: 20px;
+}
+
+main .about-section .about-image img{
+    width: 100%;
+    transition: all 300ms ease-in-out;
+}
+
+main .about-section .about-image img:hover{
+    transform: scale(1.15);
+    filter: brightness(75%);
+}
+
+main .about-section .about-text button{
+    border: 2px solid #34c759;
+    padding: 10px;
+    border-radius: 5px;
+    margin-top: 150px;
+    color: rgb(0, 0, 0);
+    transition: all 300ms ease-in-out;
+}
+
+main .about-section .about-text button:hover{
+    background-color: #34c759;
+    color: white;
+}
+
+main .locations{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    margin: 100px 0;
+    padding: 70px;
+    background-color: whitesmoke;
+}
+
+main .locations>div{
+    display: flex;
+    flex-direction: column;
+    gap: 0;
+    width: 30%;
+    height: 300px;
+    background-color: #feecbd;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+main .locations div .locations_image{
+    height: 80%;
+    width: 100%;
+    padding-bottom: 0;
+    position: relative;
+}
+
+main .locations div .locations_image img{
+    width: 100%;
+}
+
+main .locations div>div:nth-child(2){
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    height: 60px;
+    padding: 0 20px;
+    position: relative;
+    background-color: #feecbd;
+}
+
+main .locations div>div:nth-child(2) h4{
+    font-size: small;
+    font-weight: 520;
+}
+
+main .locations div>div:nth-child(2) span{
+    display: flex;
+    justify-content: flex-end;
+    width: 40px;
+    height: 20px;
+}
+
+main .locations div .locations_image::before {
+    content: 'Lorem ipsum dolor, sit amet consectetur adipisicing elit. Animi qui culpa, neque voluptate omnis reiciendis soluta sit, veritatis facere eum ex praesentium! Laboriosam quo dignissimos delectus blanditiis minima nam excepturi!';
+    width: 100%;
+    height: 200%;
+    box-sizing: border-box;
+    padding: 120px 10px 10px;
+    color: white;
+    font-size: 15px;
+    background-color: #00000051;
+    position: absolute;
+    top: 250px;
+    z-index: 1;
+    transition: all 1s ease-in-out 300ms;
+}
+
+main .locations div .locations_image:hover::before {
+    transform: translateY(-250px);
+}
+
+main .locations div .text {
+    z-index: 2;  
+    width: 100%;
+    height: 20%;
+}
+
+main .signup-section {
+    width: 100%;
+    height: 200px;
+    margin: 100px 0;
+    background-image: linear-gradient(rgba(0, 0, 0, 0.50), rgba(0, 0, 0, 0.75)), url(../images/signup_bg.jpg);
+    background-size: cover;
+    background-attachment: fixed;
+    color: whitesmoke;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 50px;
+}
+
+main .signup-section h3 {
+    color: white;
+    font-size: 32px;
+    margin-bottom: 5px;
+}
+
+main .signup-section .cta button {
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    color: white;
+    text-shadow: 0 0 1px rgb(73, 73, 73);
+    position: relative;
+    overflow: hidden;
+    z-index: 2;
+}
+
+main .signup-section .cta button .inner {
+    position: relative;
+    z-index: 3;
+}
+
+main .signup-section .cta button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ffc107;
+    position: absolute;
+    top: 0px;
+    left: 100px;
+    z-index: 1;
+    transition: all 1s ease-in-out 300ms;
+}
+
+main .signup-section .cta button:hover::after {
+    transform: translateX(-100px);
+}
+
+main .form-section {
+    width: 100%;
+    margin: 100px 0;
+    padding: 100px 0;
+    background-color: whitesmoke;
+}
+
+main .form-section .form-tag {
+    text-align: center;
+    width: 70%;
+    margin: 0 auto 70px;
+}
+
+main .form-section .form-tag h2 {  
+    font-size: 50px;
+    margin-top: 10px;
+}
+
+main .form-section .form-tag h2 span {
+    color: #34c759;
+}
+
+.form-section .form-content {
+    display: flex;
+    justify-content: space-between;
+    width: 95%;
+    margin: 0px auto;
+}
+
+main .form-section .form-image {
+    background: #34c759;
+    width: 47%;
+    height: 600px;
+    border-radius: 20px;
+    overflow: hidden;
+}
+
+.form-section .form-content .form {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 47%;
+    height: 600px;
+    border-radius: 20px;
+}
+
+.form-section .form-content form>div {
+    margin: 20px 0;
+}
+
+main .form-section .form-image img {
+    width: 100%;
+}
+
+main .form-section .form div input {
+    width: 400px;
+    height: 40px;
+}
+
+main .form-section .form textarea {
+    width: 400px;
+    height: 200px;
+    padding-top: 10px;
+}
+
+.form input, .form textarea {
+    border-radius: 10px;
+    margin-top: 5px;
+    border: none;
+    padding-left: 20px;
+    font-family: Verdana, Geneva, Tahoma, sans-serif;
+}
+
+main .form-section .form button {
+    border: 2px solid #ffc107;
+    padding: 10px 20px;
+    border-radius: 5px;
+    position: relative;
+    overflow: hidden;
+    z-index: 6;
+}
+
+main .form-section .form button .inner {
+    position: relative;
+    z-index: 7;
+}
+
+main .form-section .form button::after {
+    content: '';
+    width: 100%;
+    height: 100%;
+    background-color: #ffc107;
+    position: absolute;
+    top: 0px;
+    left: 120px;
+    z-index: 5;
+    transition: all 1s ease-in-out 300ms;
+}
+
+main .form-section .form button:hover::after {
+    transform: translateX(-120px);
+}
+
+
+
+/* Footer Styles */
+
+footer {
+    background-color: black;
+    width: 100%;
+    color: whitesmoke;
+}
+
+footer .dem-lists {
+    display: flex;
+    justify-content: space-around;
+}
+
+footer .dem-lists ul {
+    list-style-type: none;
+    padding-right: 20px;
+}
+
+footer .page-end {
+    display: flex;
+    padding: 40px auto;
+    margin: 0px auto;
+    margin-top: 70px;
+    width: 90%;
+    height: 100px;
+    justify-content: space-between;
+    align-items: center;
+    border-top: 1px solid whitesmoke;
+}
+
+footer .page-end .end-icons {
+    display: flex;
+    justify-content: space-between;
+    width: 150px;
+}
+
+footer .page-end p i {
+    color: red;
+}
